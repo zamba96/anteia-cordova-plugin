@@ -1,4 +1,4 @@
-/********* AnteiaCordovaPlugin.m Cordova Plugin Implementation *******/
+/********* AnteiaCordovaPlugin.m Cordova Plugin Implementation
 
 #import <Cordova/CDV.h>
 @import Anteia;
@@ -135,3 +135,4 @@
     [self.commandDelegate sendPluginResult:pluginResult callbackId:command.callbackId];
 }
 @end
+ *******/

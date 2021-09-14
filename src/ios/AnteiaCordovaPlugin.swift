@@ -1,4 +1,4 @@
-import fundation
+import Foundation
 import Anteia
 
 class AnteiaCordovaPlugin: CDVPlugin {
@@ -23,7 +23,7 @@ class AnteiaCordovaPlugin: CDVPlugin {
     func launchDataEntry(command : CDVInvokedUrlCommand) //this method will be called web app
     {
         self.command = command
-        let vc = OtpModule.build()
+        let vc = AnteiaUserFormModule.build()
         bridge?.presentVC(vc, animated: true, completion: nil)
     }
     
@@ -47,7 +47,7 @@ class AnteiaCordovaPlugin: CDVPlugin {
     func launchBiometrics(command : CDVInvokedUrlCommand) //this method will be called web app
     {
         self.command = command
-        let vc = OtpModule.build(from: .phone)
+        let vc = MLViewModule.build()
         bridge?.presentVC(vc, animated: true, completion: nil)
     }
     
@@ -55,8 +55,6 @@ class AnteiaCordovaPlugin: CDVPlugin {
     func executeLists(command : CDVInvokedUrlCommand) //this method will be called web app
     {
         self.command = command
-        let vc = OtpModule.build(from: .phone)
-        bridge?.presentVC(vc, animated: true, completion: nil)
     }
     
     @objc(setCredentials:)
