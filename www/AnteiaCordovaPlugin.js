@@ -2,10 +2,6 @@ var exec = require("cordova/exec");
 
 var PLUGIN_NAME = "AnteiaCordovaPlugin";
 
-exports.coolMethod = function (arg0, success, error) {
-  exec(success, error, PLUGIN_NAME, "coolMethod", [arg0]);
-};
-
 exports.launchTermsAndConditions = function (success, error) {
   exec(success, error, PLUGIN_NAME, "launchTermsAndConditions", []);
 };
