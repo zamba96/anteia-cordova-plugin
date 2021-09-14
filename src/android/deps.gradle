@@ -15,5 +15,5 @@ repositories {
 }
 
 dependencies {
-    implementation 'co.anteia:registrationsdk:1.0.12'
+    implementation 'co.anteia:registrationsdk:1.0.14'
 }
