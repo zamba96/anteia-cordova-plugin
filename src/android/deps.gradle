@@ -1,0 +1,19 @@
+android {
+    dataBinding {
+        enabled = true
+    }
+    aaptOptions {
+        noCompress "tflite" // To avoid ML model compression
+    }
+}
+
+repositories {
+    google()
+    jcenter()
+    mavenCentral()
+    mavenLocal()
+}
+
+dependencies {
+    implementation 'co.anteia:registrationsdk:1.0.14'
+}
