@@ -19,6 +19,7 @@ import co.anteia.registrationsdk.ui.confirmemail.EmailActivity;
 import co.anteia.registrationsdk.ui.confirmemail.PhoneActivity;
 import co.anteia.registrationsdk.ui.dataentry.DataEntryActivity;
 import co.anteia.registrationsdk.ui.termsandconditions.TermsAndConditionsActivity;
+import co.anteia.registrationsdk.TermsAndConditions2;
 
 /**
  * This class echoes a string called from JavaScript.
@@ -102,7 +103,7 @@ public class AnteiaCordovaPlugin extends CordovaPlugin {
     cordova.getActivity().runOnUiThread(new Runnable() {
       @Override
       public void run() {
-        Intent intent = new Intent(cordova.getActivity(), TermsAndConditionsActivity.class);
+        Intent intent = new Intent(cordova.getActivity(), TermsAndConditions2.class);
         cordova.startActivityForResult(command, intent, LAUNCH_TERMS_CODE);
       }
     });
