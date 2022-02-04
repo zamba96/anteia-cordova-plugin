@@ -1,6 +1,6 @@
 {
-  "name": "AnteiaCordovaPlugin",
-  "version": "2.4",
+  "name": "anteia-cordova-sdk",
+  "version": "2.4.0",
   "description": "",
   "cordova": {
     "id": "anteia.cordova.plugin",
