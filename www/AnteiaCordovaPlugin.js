@@ -26,6 +26,10 @@ exports.executeLists = function (regId, success, error) {
   exec(success, error, PLUGIN_NAME, "executeLists", [regId]);
 };
 
+exports.gerRegistration = function (regId, success, error) {
+  exec(success, error, PLUGIN_NAME, "getRegistration", [regId]);
+};
+
 exports.setCredentials = function (
   userName,
   apiKey,
